@@ -1,6 +1,9 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
+//second phase of program - get user's input for amount to convert
+
 public class myUserInput {
     public static double getUserInput() {
         System.out.println("Please enter an amount to convert:");

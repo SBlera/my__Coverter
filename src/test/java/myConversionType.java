@@ -1,6 +1,8 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
+//first phase of program - get the required conversion type
 public class myConversionType {
    public static double ConversionType(){
         System.out.println("Welcome to currency converter!\n" +

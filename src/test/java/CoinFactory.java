@@ -1,3 +1,6 @@
+
+// create coins
+
 public class CoinFactory {
     public static Coin getCoinInstance(Coins coin) {
         switch (coin) {

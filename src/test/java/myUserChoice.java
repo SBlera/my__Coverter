@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+//last phase of program - offer another conversion or finish (logic on main)
+
 public class myUserChoice {
     public static String getUserChoice() {
         System.out.println("Need another conversion? choose Y/N");

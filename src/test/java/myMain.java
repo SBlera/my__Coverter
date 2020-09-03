@@ -5,16 +5,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class myMain {
+
+    //create vars to use for logic calcs
     private static double ConversionType;
     private static double UserInput;
     private static String UserChoice;
 
     public static void main(String[] args) throws IOException {
-        String reRun = "y";
+
+        // create list and format to handle later results
         Map<String, String> list = new HashMap<String, String>();
         DecimalFormat DF = new DecimalFormat("0.00");
 
+        //restart point for program
+        String reRun = "y";
         while (reRun == "y") {
+
+            //get conv.Type and input from methods. place in local vars
             ConversionType = myConversionType.ConversionType();
             UserInput = myUserInput.getUserInput();
             double result01;
@@ -54,11 +61,11 @@ public class myMain {
                     break;
 
                 }  else System.out.println("Invalid input");
-                  }
+            }
             }
 
-        }
-    }
+            }
+            }
 
 
 
