@@ -1,9 +1,3 @@
-import org.apache.commons.digester.plugins.PluginInvalidInputException;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 //last phase of program - offer another conversion or finish (logic on main)
@@ -16,7 +10,8 @@ public class myUserChoice {
         while (true) {
            try{
                Scanner converter = new Scanner(System.in);
-            UserChoice = converter.next();
+               UserChoice = converter.next();
+               if (UserChoice.equalsIgnoreCase("y") || UserChoice.equalsIgnoreCase("n"))
             return UserChoice;
            } catch(Exception e){
                System.out.println("Invalid input");
