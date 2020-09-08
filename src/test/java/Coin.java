@@ -1,9 +1,11 @@
+// Calc for conversion result and conversion type
 
-// calc for conversion result
 public abstract class Coin implements ICalculator {
     public abstract double getValue();{
     }
     public double calculate(double input) {
         return input*getValue();
     }
+
+    public abstract String GetName();
 }

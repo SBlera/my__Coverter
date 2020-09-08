@@ -1,4 +1,4 @@
-//conversion value
+//Conversion value ILS To EUR
 
 public class EUR extends Coin{
 
@@ -9,5 +9,10 @@ public class EUR extends Coin{
     }
     public double calculate(double input) {
         return input * getValue();
+    }
+
+    @Override
+    public String GetName() {
+        return "ILS To EUR";
     }
 }

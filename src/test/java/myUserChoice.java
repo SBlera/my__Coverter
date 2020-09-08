@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//last phase of program - offer another conversion or finish (logic on main)
+//Offer another conversion or finish + check input
 
 public class myUserChoice {
     public static String getUserChoice() {
@@ -11,15 +11,16 @@ public class myUserChoice {
                Scanner converter = new Scanner(System.in);
                UserChoice = converter.next();
                if (UserChoice.equalsIgnoreCase("y") || UserChoice.equalsIgnoreCase("n"))
-            return UserChoice;
-           } catch(Exception e){
-               System.out.println("Invalid input");
+                   return UserChoice;
+               if(!UserChoice.equalsIgnoreCase("y") || !UserChoice.equalsIgnoreCase("n")){
+                   System.out.println("Invalid input,try gain!");
+               }
+           }catch(Exception e){
+               System.out.println("Invalid input,try gain!");
            }
-return UserChoice;
         }
-
-
-    }}
+    }
+}
 
 
 

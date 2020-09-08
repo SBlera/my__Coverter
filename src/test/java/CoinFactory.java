@@ -1,5 +1,4 @@
-
-// create coins
+// Create coins
 
 public class CoinFactory {
     public static Coin getCoinInstance(Coins coin) {
